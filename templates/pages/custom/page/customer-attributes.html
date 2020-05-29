@@ -1,0 +1,16 @@
+{{#partial "page"}}
+    {{inject "storefrontApiToken" settings.storefront_api.token}}
+    <script>console.log('settings.storefront_api.token', '{{settings.storefront_api.token}}')</script>
+
+    {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+
+    <h2 class="page-heading">Customer Attributes</h2>
+    {{> components/account/navigation account_page='customer_attributes'}}
+
+    <div class="account account--fixedLarge">
+        <div class="account-body attributes" id="attributes-container">
+            Content will go here
+        </div>
+    </div>
+{{/partial}}
+{{> layout/base}}

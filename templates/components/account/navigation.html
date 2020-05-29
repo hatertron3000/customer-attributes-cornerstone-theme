@@ -68,5 +68,12 @@
                 <a class="navBar-action" href="{{urls.account.details}}">{{lang 'account.nav.settings'}}</a>
             </li>
         {{/if}}
+        {{#if account_page '===' 'customer_attributes'}}
+        <li class="navBar-item is-active">{{lang 'account.nav.customer_attributes'}}</li>
+        {{else}}
+            <li class="navBar-item">
+                <a class="navBar-action" href="/customer-attribute-values/">{{lang 'account.nav.customer_attributes'}}</a>
+            </li>
+        {{/if}}
     </ul>
 </nav>

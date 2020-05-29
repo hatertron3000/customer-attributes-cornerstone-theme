@@ -1,3 +1,6 @@
+# Customizations
+Added a custom page template that adds a "customer attribute values" tab to the account portal. The page renders a React app that displays customer attribute data, and updates attribute values using a microservice hosted on AWS.
+
 # Cornerstone
 [![Build Status](https://travis-ci.org/bigcommerce/cornerstone.svg?branch=master)](https://travis-ci.org/bigcommerce/cornerstone)
 

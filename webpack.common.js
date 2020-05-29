@@ -1,8 +1,8 @@
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin,
-      CleanPlugin = require('clean-webpack-plugin'),
-      LodashPlugin = require('lodash-webpack-plugin'),
-      path = require('path'),
-      webpack = require('webpack');
+    CleanPlugin = require('clean-webpack-plugin'),
+    LodashPlugin = require('lodash-webpack-plugin'),
+    path = require('path'),
+    webpack = require('webpack');
 
 // Common configuration, with extensions in webpack.dev.js and webpack.prod.js.
 module.exports = {
@@ -32,6 +32,7 @@ module.exports = {
                                 targets: '> 1%, last 2 versions, Firefox ESR',
                                 corejs: '^3.4.1',
                             }],
+                            ['@babel/preset-react'],
                         ],
                     },
                 },
